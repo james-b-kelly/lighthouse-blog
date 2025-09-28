@@ -6,8 +6,12 @@ title: How to Do a Thing
 # How to Do a Thing
 
 *Published on September 28, 2025*
+{: .article-meta}
 
 This is an example article written in Markdown! Much easier than HTML.
+
+**Pro tip:** You can use kramdown syntax to add CSS classes to your Markdown elements!
+{: .highlight-box}
 
 ## Step 1: Create the Markdown File
 
@@ -30,10 +34,27 @@ git commit -m "Add new article"
 git push
 ```
 
-## Step 3: Jekyll Renders It
+## Step 3: Add CSS Classes
 
-GitHub Pages will automatically convert your Markdown to HTML!
+Use kramdown syntax to add classes:
+
+```markdown
+{: .highlight-box}
+This paragraph gets the highlight-box class
+
+{: .text-center}
+## This heading will be centered
+
+[Button Link](/)
+{: .button}
+```
+
+## Step 4: Jekyll Renders It
+{: .text-center}
+
+GitHub Pages will automatically convert your Markdown to HTML with your custom classes!
 
 ---
 
 [← Back to Home](/)
+{: .button}
