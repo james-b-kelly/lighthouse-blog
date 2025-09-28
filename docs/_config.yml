@@ -1,0 +1,14 @@
+title: Lighthouse Blog
+description: A blog about web performance and development
+baseurl: ""
+url: "https://articles.trailart.store"
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Theme (optional)
+theme: minima
