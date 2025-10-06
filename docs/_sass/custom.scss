@@ -1,11 +1,15 @@
 // Custom styles for Lighthouse Blog
 // Edit this file to customize your theme
 
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 // Variables
 $primary-color: #FF0066;
 $secondary-color: #2c3e50;
 $background-color: #f8f9fa;
-$text-color: #333;
+$text-color: #8f8f8f;
+$title-color: #535353;
 
 // Header and Logo Styles
 .site-header {
@@ -100,14 +104,19 @@ $text-color: #333;
 
 // Override theme defaults if needed
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.6;
+  color: $text-color;
 }
 
 h1,
 h2,
 h3 {
-  color: $secondary-color;
+  color: $title-color;
+}
+
+p {
+  color: $title-color;
 }
 
 // Link colors
@@ -120,5 +129,17 @@ a {
 
   &:hover {
     color: darken($primary-color, 15%);
+  }
+}
+
+// FAQ item styling
+.faq-item {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  h3 {
+    margin-top: 0;
   }
 }
