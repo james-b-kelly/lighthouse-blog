@@ -2,7 +2,7 @@
 // Edit this file to customize your theme
 
 // Variables
-$primary-color: #3498db;
+$primary-color: #FF0066;
 $secondary-color: #2c3e50;
 $background-color: #f8f9fa;
 $text-color: #333;
@@ -108,4 +108,17 @@ h1,
 h2,
 h3 {
   color: $secondary-color;
+}
+
+// Link colors
+a {
+  color: $primary-color;
+
+  &:visited {
+    color: darken($primary-color, 10%);
+  }
+
+  &:hover {
+    color: darken($primary-color, 15%);
+  }
 }
